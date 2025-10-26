@@ -1,5 +1,5 @@
 {
-  "version": "2025-10-26.1.0",
+  "version": "2025-10-27.1.0",
   "rules": [
     {
       "id": "ai_training",
@@ -10,25 +10,20 @@
       "enabled": true
     },
     {
-      "id": "biometrics",
-      "patterns": ["biometric", "face scan", "fingerprint", "voiceprint"],
-      "text": "You agree that biometric identifiers may be processed.",
-      "risk": "high",
-      "sourceHint": "Biometric data",
+      "id": "data_sharing",
+      "patterns": ["share", "third party", "partner", "affiliate"],
+      "text": "You agree that your data may be shared with third parties.",
+      "risk": "medium",
+      "sourceHint": "Data Sharing",
       "enabled": true
     },
     {
-      "id": "location_tracking",
-      "patterns": ["location", "gps", "geolocation", "whereabouts"],
-      "text": "You agree that your location may be tracked and stored.",
-      "risk": "medium",
-      "sourceHint": "Location tracking",
+      "id": "biometric_data",
+      "patterns": ["fingerprint", "facial recognition", "biometric", "voiceprint"],
+      "text": "You agree that biometric identifiers may be processed.",
+      "risk": "high",
+      "sourceHint": "Biometric Data",
       "enabled": true
     }
-  ],
-  "overrides": {
-    "data_sharing": {
-      "risk": "high"
-    }
-  }
+  ]
 }
