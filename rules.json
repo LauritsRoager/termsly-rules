@@ -1,0 +1,34 @@
+{
+  "version": "2025-10-26.1.0",
+  "rules": [
+    {
+      "id": "ai_training",
+      "patterns": ["train", "machine learning", "ai", "ml"],
+      "text": "You agree that your data may be used to train AI models.",
+      "risk": "high",
+      "sourceHint": "AI training",
+      "enabled": true
+    },
+    {
+      "id": "biometrics",
+      "patterns": ["biometric", "face scan", "fingerprint", "voiceprint"],
+      "text": "You agree that biometric identifiers may be processed.",
+      "risk": "high",
+      "sourceHint": "Biometric data",
+      "enabled": true
+    },
+    {
+      "id": "location_tracking",
+      "patterns": ["location", "gps", "geolocation", "whereabouts"],
+      "text": "You agree that your location may be tracked and stored.",
+      "risk": "medium",
+      "sourceHint": "Location tracking",
+      "enabled": true
+    }
+  ],
+  "overrides": {
+    "data_sharing": {
+      "risk": "high"
+    }
+  }
+}
